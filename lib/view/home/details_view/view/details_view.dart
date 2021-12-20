@@ -47,14 +47,6 @@ class DetailsView extends StatelessWidget {
                           style: context.textTheme.headline6,
                         ),
                       ),
-                      // ListView.builder(
-                      //     physics: NeverScrollableScrollPhysics(),
-                      //     shrinkWrap: true,
-                      //     itemCount: viewModel.results!.length,
-                      //     itemBuilder: (context, index) {
-                      //       return Text(viewModel.results![index].title!);
-                      //     })
-
                       Observer(builder: (_) {
                         if (viewModel.isLoading) {
                           return buildCircularProgress();
